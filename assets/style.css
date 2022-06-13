@@ -1,0 +1,49 @@
+:root {
+    --headline-font: 80px;
+    --subhead-font: 50px;
+}
+.christmas {
+    --displayChristmas: block;
+    --displayHalloween: none;
+    --fontFamily: 'Mountains of Christmas', cursive;
+    --primaryBackground: darkgreen;
+    --primaryColor: silver;
+    --secondaryColor: darkred;
+}
+.halloween {
+    --displayChristmas: none;
+    --displayHalloween: block;
+    --fontFamily: 'Creepster', cursive;
+    --primaryBackground: black;
+    --primaryColor: orange;
+    --secondaryColor: red;
+}
+
+body {
+    background-color: var(--primaryBackground);
+    font-family: var(--fontFamily);
+}
+
+h1 {
+    color: var(--primaryColor);
+    font-size: var(--headline-font);
+}
+
+h2 {
+    color: var(--secondaryColor);
+    font-size: var(--subhead-font);
+}
+
+.displayChristmas {
+    display: var(--displayChristmas);
+}
+
+.displayHalloween {
+    display: var(--displayHalloween);
+}
+
+.switch-theme {
+    position: fixed;
+    right: 0;
+    top: 0;
+}
