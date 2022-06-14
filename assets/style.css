@@ -2,22 +2,32 @@
 :root {
     --headline-font: 80px;
     --subhead-font: 50px;
+    --christmasFont: 'Mountains of Christmas', cursive;
+    --christmasPrimaryBackground: darkgreen;
+    --christmasPrimaryColor: silver;
+    --christmasSecondaryColor: darkred;
+    --halloweenFont: 'Creepster', cursive;
+    --halloweenPrimaryBackground: black;
+    --halloweenPrimaryColor: orange;
+    --halloweenSecondaryColor: red;
 }
+
 .christmas {
     --displayChristmas: block;
     --displayHalloween: none;
-    --fontFamily: 'Mountains of Christmas', cursive;
-    --primaryBackground: darkgreen;
-    --primaryColor: silver;
-    --secondaryColor: darkred;
+    --fontFamily: var(--christmasFont);
+    --primaryBackground: var(--christmasPrimaryBackground);
+    --primaryColor: var(--christmasPrimaryColor);
+    --secondaryColor: var(--christmasSecondaryColor);
 }
+
 .halloween {
     --displayChristmas: none;
     --displayHalloween: block;
-    --fontFamily: 'Creepster', cursive;
-    --primaryBackground: black;
-    --primaryColor: orange;
-    --secondaryColor: red;
+    --fontFamily: var(--halloweenFont);
+    --primaryBackground: var(--halloweenPrimaryBackground);
+    --primaryColor: var(--halloweenPrimaryColor);
+    --secondaryColor: var(--halloweenSecondaryColor);
 }
 
 /* Variables are consumed by using `var(--variable-name)` format. */
