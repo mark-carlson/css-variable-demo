@@ -1,7 +1,5 @@
 /* Assigns values to variables */
 :root {
-    --headline-font: 80px;
-    --subhead-font: 50px;
     --christmasFont: 'Mountains of Christmas', cursive;
     --christmasPrimaryBackground: darkgreen;
     --christmasPrimaryColor: silver;
@@ -10,6 +8,8 @@
     --halloweenPrimaryBackground: black;
     --halloweenPrimaryColor: orange;
     --halloweenSecondaryColor: red;
+    --headline-font: 80px;
+    --subhead-font: 50px;
 }
 
 .christmas {
